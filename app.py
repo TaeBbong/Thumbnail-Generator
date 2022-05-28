@@ -9,12 +9,12 @@ import datetime, json, yaml, random
 
 class App:
     def __init__(self):
-        with open('config.yml', 'r') as ymlfile:
+        with open('configs/config.yml', 'r') as ymlfile:
             cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
             self.colors = cfg['colors']
             self.fonts = cfg['fonts']
             ymlfile.close()
-        with open('content.yml', 'r') as ymlfile:
+        with open('templates/content.yml', 'r') as ymlfile:
             cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
             content = cfg[0]
             self.subject = content['subject']
