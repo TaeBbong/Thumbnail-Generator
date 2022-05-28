@@ -1,10 +1,14 @@
 ---
 colors:
-  - background: FFCC8F
-    text: ffffff
-  - background: FFDAAF
-    text: ffffff
-  - background: A760FF
-    text: ffffff
-  - background: CA82FF
-    text: ffffff
+  - background: "#FFCC8F"
+    text: "#ffffff"
+  - background: "#FFDAAF"
+    text: "#ffffff"
+  - background: "#A760FF"
+    text: "#ffffff"
+  - background: "#CA82FF"
+    text: "#ffffff"
+fonts:
+  bold: fonts/NotoSansKR-Bold.otf
+  light: fonts/NotoSansKR-Light.otf
+  medium: fonts/NotoSansKR-Medium.otf
