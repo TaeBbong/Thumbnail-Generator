@@ -1,5 +1,3 @@
-# /Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-
 '''
 TODO: 백그라운드 이미지 설정
 TODO: 기본값 설정
@@ -51,10 +49,6 @@ class App:
         noto_light = ImageFont.truetype(self.fonts['light'], 50)
         w3, h3 = noto_light.getsize(text=f'{self.date} @{self.author}')
         draw.text(((WIDTH - w3) / 2, HEIGHT - h3 * 2 - pady), f'{self.date} @{self.author}', fill=text_color, font=noto_light)
-
-        # draw.text((480, 120), self.subtitle, fill=text_color, font=ImageFont.truetype(self.fonts['light'], 40), align="center")
-        # draw.text((480, 240), self.author, fill=text_color, font=ImageFont.truetype(self.fonts['medium'], 40), align="center")
-        # draw.text((480, 360), self.date, fill=text_color, font=ImageFont.truetype(self.fonts['medium'], 40), align="center")
 
         img.save(f'outputs/{self.date}_{self.subject}.png')
 
